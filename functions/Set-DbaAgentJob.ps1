@@ -501,7 +501,8 @@ Changes a job with the name "Job1" on multiple servers to have another descripti
                 catch {
                     Stop-Function -Message "Something went wrong changing the job" -ErrorRecord $_ -Target $instance -Continue
                 }
-                Get-DbaAgentJob -SqlInstance $server | Where-Object Name -eq $currentjob.name
+
+                Get-DbaAgentJob -SqlInstance $server | Where-Object {$_.Name -eq $currentjob.name}
             }
         }
     }
