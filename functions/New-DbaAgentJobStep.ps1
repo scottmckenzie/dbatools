@@ -134,7 +134,7 @@ Create a step in "Job1" with the name Step1 where the database will the "msdb" f
         [PSCredential]$SqlCredential,
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
-        [object[]]$Job,
+        [string[]]$Job,
         [int]$StepId,
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]

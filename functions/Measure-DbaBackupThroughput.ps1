@@ -95,8 +95,8 @@ function Measure-DbaBackupThroughput {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [datetime]$Since,
         [switch]$Last,
         [ValidateSet("Full", "Log", "Differential", "File", "Differential File", "Partial Full", "Partial Differential")]

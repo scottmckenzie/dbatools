@@ -56,8 +56,8 @@ function Get-DbaDbFile {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [object[]]$InputObject,
         [Alias('Silent')]
         [switch]$EnableException

@@ -76,8 +76,8 @@ function Find-DbaTrigger {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [parameter(Mandatory)]
         [string]$Pattern,
         [ValidateSet('All', 'Server', 'Database', 'Object')]

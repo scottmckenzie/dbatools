@@ -129,7 +129,7 @@ function New-DbaAgentSchedule {
         [DbaInstanceParameter[]]$SqlInstance,
         [System.Management.Automation.PSCredential]
         $SqlCredential,
-        [object[]]$Job,
+        [string[]]$Job,
         [object]$Schedule,
         [switch]$Disabled,
         [ValidateSet('Once', 'Daily', 'Weekly', 'Monthly', 'MonthlyRelative', 'AgentStart', 'IdleComputer')]

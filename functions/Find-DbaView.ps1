@@ -72,8 +72,8 @@ function Find-DbaView {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [parameter(Mandatory)]
         [string]$Pattern,
         [switch]$IncludeSystemObjects,

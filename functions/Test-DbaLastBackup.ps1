@@ -133,8 +133,8 @@ function Test-DbaLastBackup {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [DbaInstanceParameter]$Destination,
         [object]$DestinationCredential,
         [string]$DataDirectory,

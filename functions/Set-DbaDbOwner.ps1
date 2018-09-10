@@ -68,8 +68,8 @@ function Set-DbaDbOwner {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [Alias("Login")]
         [string]$TargetLogin,
         [Alias('Silent')]

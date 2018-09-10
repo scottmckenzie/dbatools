@@ -68,9 +68,9 @@ function Remove-DbaDbMasterKey {
         [DbaInstanceParameter[]]$SqlInstance,
         [System.Management.Automation.PSCredential]$SqlCredential,
         [parameter(Mandatory, ParameterSetName = "instanceExplicit")]
-        [object[]]$Database,
+        [string[]]$Database,
         [parameter(ParameterSetName = "instanceAll")]
-        [object[]]$ExcludeDatabase,
+        [string[]]$ExcludeDatabase,
         [parameter(Mandatory, ParameterSetName = "instanceAll")]
         [switch]$All,
         [parameter(ValueFromPipeline, ParameterSetName = "collection")]

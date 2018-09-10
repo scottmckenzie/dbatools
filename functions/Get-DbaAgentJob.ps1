@@ -74,8 +74,8 @@ function Get-DbaAgentJob {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Job,
-        [object[]]$ExcludeJob,
+        [string[]]$Job,
+        [string[]]$ExcludeJob,
         [switch]$NoDisabledJobs,
         [Alias('Silent')]
         [switch]$EnableException

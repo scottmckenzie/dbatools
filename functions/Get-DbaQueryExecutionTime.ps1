@@ -71,8 +71,8 @@ limiting results to queries with more than 200 total executions and an execution
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [parameter(Position = 1, Mandatory = $false)]
         [int]$MaxResultsPerDb = 100,
         [parameter(Position = 2, Mandatory = $false)]

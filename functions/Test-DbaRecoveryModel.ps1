@@ -71,8 +71,8 @@ function Test-DbaRecoveryModel {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [PSCredential]$SqlCredential,
         [validateSet("Full","Simple","Bulk_Logged")]
         [object]$RecoveryModel,

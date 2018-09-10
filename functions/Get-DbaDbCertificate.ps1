@@ -54,8 +54,8 @@ Gets the cert1 certificate within the db1 database
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [object[]]$Certificate,
         [Alias('Silent')]
         [switch]$EnableException

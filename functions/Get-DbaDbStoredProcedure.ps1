@@ -65,8 +65,8 @@ function Get-DbaDbStoredProcedure {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$ExcludeSystemSp,
         [Alias('Silent')]
         [switch]$EnableException

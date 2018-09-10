@@ -47,8 +47,8 @@ function Get-DbaDbSnapshot {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [object[]]$Snapshot,
         [object[]]$ExcludeSnapshot,
         [Alias('Silent')]

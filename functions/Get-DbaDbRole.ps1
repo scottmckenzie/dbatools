@@ -80,8 +80,8 @@ Returns SQLServer, Database, Role for DatabaseRoles on sql instance ServerB\sql1
         [DbaInstanceParameter[]]$SqlInstance,
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$ExcludeFixedRole,
         [Alias('Silent')]
         [switch]$EnableException

@@ -76,7 +76,7 @@ function Remove-DbaAgentJobStep {
         [PSCredential]$SqlCredential,
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
-        [object[]]$Job,
+        [string[]]$Job,
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
         [string]$StepName,

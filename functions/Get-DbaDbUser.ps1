@@ -66,8 +66,8 @@ Gets the users for the databases on Sql1 and Sql2/sqlexpress
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$ExcludeSystemUser,
         [Alias('Silent')]
         [switch]$EnableException

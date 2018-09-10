@@ -50,7 +50,7 @@ function Get-DbaRepPublication {
     param (
         [parameter(Mandatory, ValueFromPipeline)]
         [DbaInstanceParameter[]]$SqlInstance,
-        [object[]]$Database,
+        [string[]]$Database,
         [PSCredential]$SqlCredential,
         [ValidateSet("Transactional", "Merge", "Snapshot")]
         [object[]]$PublicationType,

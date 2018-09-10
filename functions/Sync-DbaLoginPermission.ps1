@@ -73,8 +73,8 @@ function Sync-DbaLoginPermission {
         [DbaInstanceParameter]$Destination,
         [PSCredential]
         $DestinationSqlCredential,
-        [object[]]$Login,
-        [object[]]$ExcludeLogin,
+        [string[]]$Login,
+        [string[]]$ExcludeLogin,
         [Alias('Silent')]
         [switch]$EnableException
     )

@@ -62,8 +62,8 @@ function Test-DbaIdentityUsage {
         [DbaInstance[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [parameter(Position = 1, Mandatory = $false)]
         [int]$Threshold = 0,
         [parameter(Position = 2, Mandatory = $false)]

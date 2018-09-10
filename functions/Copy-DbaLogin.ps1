@@ -130,8 +130,8 @@ function Copy-DbaLogin {
         [parameter(Mandatory)]
         [DbaInstanceParameter[]]$Destination,
         [PSCredential]$DestinationSqlCredential,
-        [object[]]$Login,
-        [object[]]$ExcludeLogin,
+        [string[]]$Login,
+        [string[]]$ExcludeLogin,
         [switch]$ExcludeSystemLogin,
         [switch]$SyncOnly,
         [parameter(ParameterSetName = "Live")]

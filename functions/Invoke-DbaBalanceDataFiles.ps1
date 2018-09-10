@@ -88,7 +88,7 @@ function Invoke-DbaBalanceDataFiles {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
+        [string[]]$Database,
         [Alias("Tables")]
         [object[]]$Table,
         [switch]$RebuildOffline,

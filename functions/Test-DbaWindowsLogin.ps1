@@ -67,8 +67,8 @@ function Test-DbaWindowsLogin {
         [Alias("ServerInstance", "SqlServer", "SqlServers")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Login,
-        [object[]]$ExcludeLogin,
+        [string[]]$Login,
+        [string[]]$ExcludeLogin,
         [ValidateSet("LoginsOnly", "GroupsOnly", "None")]
         [string]$FilterBy = "None",
         [string[]]$IgnoreDomains,

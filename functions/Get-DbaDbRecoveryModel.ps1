@@ -59,8 +59,8 @@ function Get-DbaDbRecoveryModel {
         [PSCredential]$SqlCredential,
         [ValidateSet('Simple', 'Full', 'BulkLogged')]
         [string[]]$RecoveryModel,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$EnableException
     )
     begin {

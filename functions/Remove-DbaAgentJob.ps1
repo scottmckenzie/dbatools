@@ -77,7 +77,7 @@ function Remove-DbaAgentJob {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Job,
+        [string[]]$Job,
         [switch]$KeepHistory,
         [switch]$KeepUnusedSchedule,
         [DbaMode]$Mode = (Get-DbatoolsConfigValue -FullName 'message.mode.default' -Fallback "Strict"),

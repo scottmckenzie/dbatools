@@ -93,7 +93,7 @@ function Invoke-DbaLogShippingRecovery {
         [Alias("ServerInstance", "SqlServer")]
         [object]$SqlInstance,
         [Parameter(ValueFromPipeline)]
-        [object[]]$Database,
+        [string[]]$Database,
         [PSCredential]$SqlCredential,
         [switch]$NoRecovery,
         [Alias('Silent')]

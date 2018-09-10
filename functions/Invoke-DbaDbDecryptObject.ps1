@@ -88,7 +88,7 @@ function Invoke-DbaDbDecryptObject {
         [DbaInstanceParameter]$SqlInstance,
         [PSCredential]$SqlCredential,
         [parameter(Mandatory)]
-        [object[]]$Database,
+        [string[]]$Database,
         [string[]]$ObjectName,
         [ValidateSet('ASCII', 'UTF8')]
         [string]$EncodingType = 'ASCII',

@@ -78,7 +78,7 @@ Removes all the user databases from server\instance without any confirmation
         $SqlCredential,
         [parameter(Mandatory, ParameterSetName = "instance")]
         [Alias("Databases")]
-        [object[]]$Database,
+        [string[]]$Database,
         [Parameter(ValueFromPipeline, Mandatory, ParameterSetName = "databases")]
         [Microsoft.SqlServer.Management.Smo.Database[]]$InputObject,
         [switch]$IncludeSystemDb,

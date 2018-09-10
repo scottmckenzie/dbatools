@@ -101,10 +101,10 @@ function Export-DbaLogin {
         [Alias("Credential")]
         [PSCredential]
         $SqlCredential,
-        [object[]]$Login,
-        [object[]]$ExcludeLogin,
+        [string[]]$Login,
+        [string[]]$ExcludeLogin,
         [Alias("Databases")]
-        [object[]]$Database,
+        [string[]]$Database,
         [Alias("OutFile", "FilePath", "FileName")]
         [string]$Path,
         [Alias("NoOverwrite")]

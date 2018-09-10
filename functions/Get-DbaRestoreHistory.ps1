@@ -79,8 +79,8 @@ function Get-DbaRestoreHistory {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [datetime]$Since,
         [switch]$Force,
         [switch]$Last,

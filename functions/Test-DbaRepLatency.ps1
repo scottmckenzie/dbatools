@@ -61,7 +61,7 @@ function Test-DbaRepLatency {
     Param (
         [parameter(Mandatory, ValueFromPipeline)]
         [DbaInstanceParameter[]] $SqlInstance, #Publisher
-        [object[]]$Database,
+        [string[]]$Database,
         [PSCredential]$SqlCredential,
         [object[]]$PublicationName,
         [int]$TimeToLive,

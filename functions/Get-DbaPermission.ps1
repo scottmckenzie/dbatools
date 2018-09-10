@@ -75,8 +75,8 @@ function Get-DbaPermission {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$IncludeServerLevel,
         [switch]$NoSystemObjects,
         [Alias('Silent')]

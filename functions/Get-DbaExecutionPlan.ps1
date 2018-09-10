@@ -79,8 +79,8 @@ Gets super detailed information for execution plans on only for AdventureWorks20
         [DbaInstanceParameter[]]$SqlInstance,
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [datetime]$SinceCreation,
         [datetime]$SinceLastExecution,
         [switch]$ExcludeEmptyQueryPlan,

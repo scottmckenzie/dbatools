@@ -99,8 +99,8 @@ function Set-DbaDbCompression {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [ValidateSet("Recommended", "Page", "Row", "None")]$CompressionType = "Recommended",
         [int]$MaxRunTime = 0,
         [int]$PercentCompression = 0,

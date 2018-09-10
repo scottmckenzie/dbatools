@@ -90,8 +90,8 @@ function Set-DbaDbRecoveryModel {
         [parameter(Mandatory)]
         [ValidateSet('Simple', 'Full', 'BulkLogged')]
         [string]$RecoveryModel,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$AllDatabases,
         [switch]$EnableException,
         [parameter(Mandatory, ValueFromPipeline, ParameterSetName = "Pipeline")]

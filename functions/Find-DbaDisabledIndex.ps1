@@ -75,8 +75,8 @@
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$NoClobber,
         [switch]$Append,
         [Alias('Silent')]

@@ -31,7 +31,7 @@ function Get-BackupAncientHistory {
         [Alias("Credential")]
         [PsCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
+        [string[]]$Database,
         [string]$FileNameStub,
         [Alias('Silent')]
         [switch]$EnableException

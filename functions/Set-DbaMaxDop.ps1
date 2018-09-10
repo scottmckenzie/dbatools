@@ -87,8 +87,8 @@ function Set-DbaMaxDop {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [int]$MaxDop = -1,
         [Parameter(ValueFromPipeline)]
         [object]$Collection,

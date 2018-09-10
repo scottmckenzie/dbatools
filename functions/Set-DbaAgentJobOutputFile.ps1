@@ -63,7 +63,7 @@ function Set-DbaAgentJobOutputFile {
             ValueFromPipelineByPropertyName = $true,
             ValueFromRemainingArguments = $false)]
         [PSCredential]$SqlCredential,
-        [object[]]$Job,
+        [string[]]$Job,
         [Parameter(Mandatory = $false, HelpMessage = 'The Job Step name',
             ValueFromPipeline,
             ValueFromPipelineByPropertyName = $true)]

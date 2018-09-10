@@ -124,8 +124,8 @@ function Set-DbaDbState {
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$AllDatabases,
         [switch]$ReadOnly,
         [switch]$ReadWrite,

@@ -150,8 +150,8 @@ function Get-DbaDatabase {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [Alias("SystemDbOnly", "NoUserDb")]
         [switch]$ExcludeAllUserDb,
         [Alias("UserDbOnly", "NoSystemDb")]

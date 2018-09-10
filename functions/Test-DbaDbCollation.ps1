@@ -63,8 +63,8 @@ function Test-DbaDbCollation {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$Detailed,
         [switch]$EnableException
     )

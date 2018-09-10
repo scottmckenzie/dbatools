@@ -78,8 +78,8 @@ Gets estimated completion times for queries performed against the Northwind, pub
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [Alias('Silent')]
         [switch]$EnableException
     )

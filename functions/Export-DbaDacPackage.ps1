@@ -73,8 +73,8 @@ function Export-DbaDacPackage {
         [DbaInstance[]]$SqlInstance,
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$AllUserDatabases,
         [string]$Path = "$home\Documents",
         [string]$ExtendedParameters,

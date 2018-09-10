@@ -110,8 +110,8 @@ function Get-DbaAgentJobHistory {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]
         $SqlCredential,
-        [object[]]$Job,
-        [object[]]$ExcludeJob,
+        [string[]]$Job,
+        [string[]]$ExcludeJob,
         [DateTime]$StartDate = "1900-01-01",
         [DateTime]$EndDate = $(Get-Date),
         [switch]$NoJobSteps,

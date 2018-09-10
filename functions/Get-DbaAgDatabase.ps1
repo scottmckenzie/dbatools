@@ -61,7 +61,7 @@ function Get-DbaAgDatabase {
         [PSCredential]$SqlCredential,
         [parameter(ValueFromPipeline)]
         [object[]]$AvailabilityGroup,
-        [object[]]$Database,
+        [string[]]$Database,
         [Alias('Silent')]
         [switch]$EnableException
     )

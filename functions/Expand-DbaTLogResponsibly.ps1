@@ -138,9 +138,9 @@ function Expand-DbaTLogResponsibly {
         [parameter(Position = 3)]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
+        [string[]]$Database,
         [parameter(Position = 4)]
-        [object[]]$ExcludeDatabase,
+        [string[]]$ExcludeDatabase,
         [parameter(Position = 5, Mandatory)]
         [int]$TargetLogSizeMB,
         [parameter(Position = 6)]

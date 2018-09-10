@@ -138,9 +138,9 @@ function Invoke-DbaDiagnosticQuery {
         [DbaInstanceParameter[]]$SqlInstance,
 
         [Alias('DatabaseName')]
-        [object[]]$Database,
+        [string[]]$Database,
 
-        [object[]]$ExcludeDatabase,
+        [string[]]$ExcludeDatabase,
 
         [object[]]$ExcludeQuery,
 

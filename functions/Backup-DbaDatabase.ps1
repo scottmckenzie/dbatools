@@ -142,8 +142,8 @@ function Backup-DbaDatabase {
         [DbaInstanceParameter]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [string[]]$BackupDirectory,
         [string]$BackupFileName,
         [switch]$CopyOnly,

@@ -65,8 +65,8 @@ Returns a gridview displaying SQLServer, Database, Role, Member for both ServerR
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$IncludeServerLevel,
         [switch]$NoFixedRole
     )

@@ -67,8 +67,8 @@ function Get-DbaUserPermission {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [parameter(Position = 1, Mandatory = $false)]
         [switch]$ExcludeSystemDatabase,
         [switch]$IncludePublicGuest,

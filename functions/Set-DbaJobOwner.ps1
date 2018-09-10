@@ -73,8 +73,8 @@ function Set-DbaJobOwner {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Jobs")]
-        [object[]]$Job,
-        [object[]]$ExcludeJob,
+        [string[]]$Job,
+        [string[]]$ExcludeJob,
         [Alias("TargetLogin")]
         [string]$Login,
         [Alias('Silent')]

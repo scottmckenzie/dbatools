@@ -137,9 +137,9 @@ function Get-DbaLogin {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Login,
+        [string[]]$Login,
         [object[]]$IncludeFilter,
-        [object[]]$ExcludeLogin,
+        [string[]]$ExcludeLogin,
         [object[]]$ExcludeFilter,
         [switch]$NoSystem,
         [switch]$SQLLogins,

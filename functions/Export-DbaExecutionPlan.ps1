@@ -75,8 +75,8 @@ function Export-DbaExecutionPlan {
         [parameter(ParameterSetName = 'NotPiped')]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [parameter(ParameterSetName = 'Piped', Mandatory)]
         [parameter(ParameterSetName = 'NotPiped', Mandatory)]
         [string]$Path,

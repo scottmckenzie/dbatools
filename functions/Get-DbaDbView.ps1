@@ -66,8 +66,8 @@ function Get-DbaDbView {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$ExcludeSystemView,
         [Alias('Silent')]
         [switch]$EnableException

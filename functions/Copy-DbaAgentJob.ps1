@@ -80,8 +80,8 @@ function Copy-DbaAgentJob {
         [parameter(Mandatory)]
         [DbaInstanceParameter[]]$Destination,
         [PSCredential]$DestinationSqlCredential,
-        [object[]]$Job,
-        [object[]]$ExcludeJob,
+        [string[]]$Job,
+        [string[]]$ExcludeJob,
         [switch]$DisableOnSource,
         [switch]$DisableOnDestination,
         [switch]$Force,

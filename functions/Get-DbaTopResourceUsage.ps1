@@ -73,8 +73,8 @@ function Get-DbaTopResourceUsage {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [ValidateSet("All", "Duration", "Frequency", "IO", "CPU")]
         [string[]]$Type = "All",
         [int]$Limit = 20,

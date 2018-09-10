@@ -57,7 +57,7 @@ Suppresses all prompts to remove the certificate in the 'db1' database and drops
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [parameter(Mandatory, ParameterSetName = "instance")]
-        [object[]]$Database,
+        [string[]]$Database,
         [parameter(Mandatory, ParameterSetName = "instance")]
         [object[]]$Certificate,
         [parameter(ValueFromPipeline, ParameterSetName = "collection")]

@@ -71,8 +71,8 @@ Gets options for all databases of sqlserver2014a and sqlserver2014b instances
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [Alias('Silent')]
         [switch]$EnableException
     )

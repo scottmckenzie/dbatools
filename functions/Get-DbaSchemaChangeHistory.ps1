@@ -74,8 +74,8 @@ function Get-DbaSchemaChangeHistory {
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [DbaDateTime]$Since,
         [string[]]$Object,
         [Alias('Silent')]

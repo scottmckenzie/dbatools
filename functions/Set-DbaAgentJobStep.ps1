@@ -138,7 +138,7 @@ Changes the database of the step in "Job1" with the name Step1 to msdb for multi
         [PSCredential]$SqlCredential,
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
-        [object[]]$Job,
+        [string[]]$Job,
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
         [string]$StepName,

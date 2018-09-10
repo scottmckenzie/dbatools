@@ -72,8 +72,8 @@ Returns information on the CommandLog table in the DBA database on both instance
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$IncludeSystemDBs,
         [string[]]$Table,
         [switch][Alias('Silent')]

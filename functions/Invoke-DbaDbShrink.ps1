@@ -129,8 +129,8 @@ function Invoke-DbaDbShrink {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$AllUserDatabases,
         [ValidateRange(0, 99)]
         [int]$PercentFreeSpace = 0,

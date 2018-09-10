@@ -97,8 +97,8 @@ function Invoke-DbaDbUpgrade {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [System.Management.Automation.PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$NoCheckDb,
         [switch]$NoUpdateUsage,
         [switch]$NoUpdateStats,

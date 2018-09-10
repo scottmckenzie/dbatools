@@ -117,7 +117,7 @@ function Remove-DbaDatabaseSafely {
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
+        [string[]]$Database,
         [parameter(Mandatory = $false)]
         [DbaInstanceParameter]$Destination = $sqlinstance,
         [PSCredential]

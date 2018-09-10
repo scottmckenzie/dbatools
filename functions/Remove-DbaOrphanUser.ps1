@@ -95,8 +95,8 @@ function Remove-DbaOrphanUser {
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [parameter(Mandatory = $false, ValueFromPipeline)]
         [object[]]$User,
         [switch]$Force,

@@ -108,9 +108,9 @@ function Backup-DbaDbCertificate {
         [parameter(ParameterSetName = "instance")]
         [object[]]$Certificate,
         [parameter(ParameterSetName = "instance")]
-        [object[]]$Database,
+        [string[]]$Database,
         [parameter(ParameterSetName = "instance")]
-        [object[]]$ExcludeDatabase,
+        [string[]]$ExcludeDatabase,
         [parameter(Mandatory = $false)]
         [Security.SecureString]$EncryptionPassword,
         [parameter(Mandatory = $false)]

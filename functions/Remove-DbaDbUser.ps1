@@ -86,10 +86,10 @@ function Remove-DbaDbUser {
 
         [parameter(ParameterSetName = 'User')]
         [Alias("Databases")]
-        [object[]]$Database,
+        [string[]]$Database,
 
         [parameter(ParameterSetName = 'User')]
-        [object[]]$ExcludeDatabase,
+        [string[]]$ExcludeDatabase,
 
         [parameter(Mandatory, ParameterSetName = 'User')]
         [object[]]$User,

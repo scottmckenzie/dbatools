@@ -130,7 +130,7 @@ Changes the schedule for Job1 with the name 'daily' to enabled on multiple serve
         [PSCredential]$SqlCredential,
         [Parameter(Mandatory, ValueFromPipeline)]
         [ValidateNotNullOrEmpty()]
-        [object[]]$Job,
+        [string[]]$Job,
         [Parameter(Mandatory, ValueFromPipeline)]
         [ValidateNotNullOrEmpty()]
         [string]$ScheduleName,

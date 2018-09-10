@@ -201,8 +201,8 @@ function Rename-DbaDatabase {
         $SqlCredential,
         [parameter(ParameterSetName = "Server")]
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$AllDatabases,
         [string]$DatabaseName,
         [string]$FileGroupName,

@@ -90,8 +90,8 @@ function Find-DbaSimilarTable {
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [string]$SchemaName,
         [string]$TableName,
         [switch]$ExcludeViews,

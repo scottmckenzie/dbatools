@@ -98,8 +98,8 @@ function Set-DbaDbQueryStoreOption {
         [PSCredential]
         $SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$AllDatabases,
         [ValidateSet('ReadWrite', 'ReadOnly', 'Off')]
         [string[]]$State,

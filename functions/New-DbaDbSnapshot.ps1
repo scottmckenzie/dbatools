@@ -98,8 +98,8 @@ function New-DbaDbSnapshot {
         [Alias("Credential")]
         [PSCredential]$SqlCredential,
         [Alias("Databases")]
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$AllDatabases,
         [string]$Name,
         [string]$NameSuffix,

@@ -147,7 +147,7 @@ Changes a job with the name "Job1" on multiple servers to have another descripti
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Job,
+        [string[]]$Job,
         [object[]]$Schedule,
         [int[]]$ScheduleId,
         [string]$NewName,

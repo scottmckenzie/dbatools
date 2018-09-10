@@ -65,8 +65,8 @@ function Get-DbaDbCheckConstraint {
         [Alias("ServerInstance", "SqlServer")]
         [DbaInstanceParameter[]]$SqlInstance,
         [PSCredential]$SqlCredential,
-        [object[]]$Database,
-        [object[]]$ExcludeDatabase,
+        [string[]]$Database,
+        [string[]]$ExcludeDatabase,
         [switch]$ExcludeSystemTable,
         [Alias('Silent')]
         [switch]$EnableException
